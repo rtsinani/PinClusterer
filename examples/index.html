@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>PinClusterer Example</title>
+		<link href="../pin_clusterer.css" rel="stylesheet" />
+		<script src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+	</head>
+<body>
+	<div id="map" style="position:relative; width:800px; height:400px; margin:30px auto;"></div>
+	
+	<script src="../pin_clusterer.js"></script>
+	<script src="data.json"></script>
+	
+	<script>
+		window.onload = function () {
+			var map = new Microsoft.Maps.Map(document.getElementById('map'), {
+					credentials: 'AkA5N0re9Y6eNV2XYLEjavUbXvB98UwCO5MzvCMBN2QJfgdmF-hTgNyZPNom2I95' 
+				}),					
+				pinClusterer = new PinClusterer(map);
+			map.setView({ center: new Microsoft.Maps.Location(data[0].latitude, data[0].longitude), zoom: 12 });
+			pinClusterer.cluster(data);
+		};
+	</script>
+</body>
+</html>

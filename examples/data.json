@@ -1,0 +1,8 @@
+var data = [
+	{ "latitude": 59.441193, "longitude": 24.729494 },
+	{ "latitude": 59.432365, "longitude": 24.742992 },
+	{ "latitude": 59.431602, "longitude": 24.757563 },
+	{ "latitude": 59.437843, "longitude": 24.765759 },
+	{ "latitude": 59.439644, "longitude": 24.779041 },
+	{ "latitude": 59.434776, "longitude": 24.756681 }
+];
