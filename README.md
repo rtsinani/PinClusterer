@@ -26,6 +26,15 @@ pinClusterer.cluster(data);
 ```
 
 
+### References
 
+Ported loosely from [Google Maps MarkerClusterer](http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/)
+
+A great [article](http://www.appelsiini.net/2008/11/introduction-to-marker-clustering-with-google-maps) by Mika Tuupola
+
+An [existing clusterer] (http://www.bing.com/community/site_blogs/b/maps/archive/2011/03/01/bing-maps-v7-modular-design-and-client-side-clustering.aspx) for Bing Maps by Ricky Brundritt
+
+
+###
 
 Copyright. 2012. Arti Sinani
