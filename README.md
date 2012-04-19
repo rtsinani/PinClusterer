@@ -24,3 +24,8 @@ var data = [
 map.setView({ center: new Microsoft.Maps.Location(data[0].latitude, data[0].longitude), zoom: 12 });
 pinClusterer.cluster(data);
 ```
+
+
+
+
+Copyright. 2012. Arti Sinani
