@@ -16,7 +16,7 @@ var data = [
 	];
 
 	map = new Microsoft.Maps.Map(document.getElementById('map'), {
-		credentials: 'AkA5N0re9Y6eNV2XYLEjavUbXvB98UwCO5MzvCMBN2QJfgdmF-hTgNyZPNom2I95' 
+		credentials: 'Bing Map Key' 
 	}),					
 
 	pinClusterer = new PinClusterer(map);
