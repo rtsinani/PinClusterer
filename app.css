@@ -1,0 +1,39 @@
+html, body, h1, h2, h3, h4, div, header, aside, section, p, a { margin:0; padding:0; }
+body { font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:13px; background:#efefef; color:#333; }
+header, aside, section, nav, article, footer { display:block; }
+ol { list-style: decimal outside none; }
+ul, ol { margin: 0 0 9px 10px; padding: 0; }
+
+a { color:#08c; text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+#mainContainer { height:100%; width:100%; overflow:hidden; }
+
+header { background:#16C2F7; padding:1.7em; box-shadow:0 0 7px #555; position:relative; z-index:2; }
+h1.logo { margin-left:1em; font-size:24px; line-height:0; color:#0193BF; text-shadow:0 0px 5px #000 inset; }
+h1.logo i { color:#fff; }
+h1.logo span { font-size:18px; margin-left:20px; color:#f0f0f0; }
+
+aside { float:left; width:650px; overflow:hidden; overflow-y:auto;
+	background:#fff; border-right:3px solid #d0d0d0; }
+aside section { padding:20px; }
+aside section p { padding:5px 0; }
+aside section h2 { padding:15px 0 5px; }
+aside section footer { margin:50px auto; text-align:center; color:#999; }
+aside section .subtitle { font-size:14px; text-align:center; }
+aside section ul.references { marging:20px 0; }
+
+#map { display:block; float:left; position:relative; background:#888; overflow:hidden; }
+
+#loader { position:absolute; top:0; left:0; width:100%; height:100%; z-index:999; background:#16C2F7; display:none; }
+#loader .logo { line-height:2; text-align:center; padding-top:15%; }
+
+/* clearfix short For modern browsers */
+.cf:before,
+.cf:after { content:""; display:table; }
+.cf:after { clear:both; }
+/* For IE 6/7 (trigger hasLayout) */
+.cf { zoom:1; }
+
+pre, code { border-radius:3px; font-family:Menlo,Monaco,"Courier New",monospace; font-size:12px; line-height:16px; }
+code { background-color: #F7F7F9; border: 1px solid #E1E1E8; color:#888; padding:2px 4px; }
