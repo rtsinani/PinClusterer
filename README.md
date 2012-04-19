@@ -1,0 +1,1 @@
+This stores a live example of the *PinClusterer*.
