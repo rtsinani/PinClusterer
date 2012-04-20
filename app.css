@@ -14,8 +14,8 @@ h1.logo { margin-left:1em; font-size:24px; line-height:0; color:#0193BF; text-sh
 h1.logo i { color:#fff; }
 h1.logo span { font-size:18px; margin-left:20px; color:#f0f0f0; }
 
-#banner { position:absolute; top:0; left:0; width:100%; z-index:999; }
-#banner div { height: 149px; width: 149px; overflow:hidden; padding: 0; margin: 0; float:right;	}
+#banner { position:absolute; top:0; left:0; width:100%; }
+#banner div { height: 149px; width: 149px; overflow:hidden; position:relative; z-index:999; float:right;	}
 #banner a { display: block; width: 190px; font-size: 14px;
 	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", 
 		"Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, 
@@ -50,7 +50,7 @@ aside { float:left; width:650px; overflow:hidden; overflow-y:auto;
 aside section { padding:20px; }
 aside section p { padding:5px 0; }
 aside section h2 { padding:15px 0 5px; }
-aside section footer { margin:50px auto; text-align:center; color:#999; }
+aside section footer { margin:50px auto; text-align1:center; color:#999; }
 aside section .subtitle { font-size:14px; text-align:center; }
 aside section ul.references { marging:20px 0; }
 

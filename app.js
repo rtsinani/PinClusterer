@@ -22,9 +22,11 @@
 		},
 		
 		_cluster: function () {
-			var map = new Microsoft.Maps.Map(document.getElementById('map'),
-					{ credentials: 'AkA5N0re9Y6eNV2XYLEjavUbXvB98UwCO5MzvCMBN2QJfgdmF-hTgNyZPNom2I95' });
-			map.setView({ center: new Microsoft.Maps.Location(data[0].latitude, data[0].longitude), zoom: 12 });
+			var map = new Microsoft.Maps.Map(document.getElementById('map'), {
+						credentials: 'AkA5N0re9Y6eNV2XYLEjavUbXvB98UwCO5MzvCMBN2QJfgdmF-hTgNyZPNom2I95' 
+					}),
+					uk = new Microsoft.Maps.Location(53.381129, -1.470085);
+			map.setView({ center: uk, zoom: 5 });
 			this._pinClusterer = new PinClusterer(map);
 			this._pinClusterer.cluster(data);
 		},
