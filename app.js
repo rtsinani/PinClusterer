@@ -13,12 +13,14 @@
 		this._hideLoading(this);
 	};
 	
-	Layout.prototype = {
+	Layout.prototype = {		
 		_events: {
-			'btnDebug'			: '_setDebugOn',
-			'btnUndebug'		: '_setDebugOff',
-			'btnHideTextOn'	: '_setHideTextOn',
-			'btnHideTextOff': '_setHideTextOff'
+			'btnDebug'					: '_setDebugOn',
+			'btnUndebug'				: '_setDebugOff',
+			'btnHideTextOn'			: '_setHideTextOn',
+			'btnHideTextOff'		: '_setHideTextOff',
+			'btnChangeGridSize'	: '_changeGridSize',
+			'btnResetGridSize'	: '_resetGridSize'
 		},
 		
 		_cluster: function () {
@@ -55,6 +57,19 @@
 	    	onClusterToMap: null
 	    });
 	    this._pinClusterer.cluster();
+		},
+		
+		_changeGridSize: function () {
+			this._changeGridSizeBy(40);
+		},
+		
+		_resetGridSize: function () {
+			this._changeGridSizeBy(60);
+		},		
+		
+		_changeGridSizeBy: function (size) {
+			this._pinClusterer.setOptions({ gridSize: size });
+			this._pinClusterer.cluster();
 		},
 				
 		_position: function () {

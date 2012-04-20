@@ -56,12 +56,16 @@ pinClusterer.cluster(data);
 </pre>
 
 					<h2>The grid size</h2>
-					
 					<p>
 						The Clusterer groups the closest pins together based on a setting called <span class="code">gridSize</span>.
 						The default value is 60px. The smaller this value, the denser are the clusters.
-						You can pass this setting with the options when instatiating the Clusterer, but you can change it anytime.
+						You can pass this setting with the options when instatiating the Clusterer, but you can change it anytime. 
 					</p>
+					<p>
+						<a href="#changegridsize" id="btnChangeGridSize">Click here</a> to set the grid size to 40px, and 
+						<a href="#changegridsize" id="btnResetGridSize">here</a> to change it back to 60px.
+					</p>
+					
 <pre class="prettyprint linenums">
 var pinClusterer = new PinClusterer(map, {
   gridSize: 40
