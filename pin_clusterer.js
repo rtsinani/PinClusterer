@@ -80,7 +80,6 @@
 			this.layer.clear();	
 			this.each(this._latlongs, this._addToClosestCluster);
 			this.toMap();
-			_log(this._clusters.length);
 			if (_defaults.debug && started) _log((new Date()) - started);
 		},
 		
