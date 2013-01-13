@@ -89,5 +89,5 @@ code { background-color: #F7F7F9; border: 1px solid #E1E1E8; color:#888; padding
 	background: linear-gradient(top, #e0f3fa 0%,#d8f0fc 50%,#b8e2f6 51%,#b6dffd 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 ); /* IE6-9 */ }
 .pin_clusterer div { color:#f0f0f0 !important; font-size:10px !important; font-weight:normal !important; text-shadow:0 0 3px #999; }
-.pin_clusterer.cluster { outline:4px; overflow:visible; }
+.pin_clusterer.cluster { outline:4px; overflow:visible !important; }
 .pin_clusterer img { display:none; }
