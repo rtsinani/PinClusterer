@@ -1,4 +1,4 @@
-.pin_clusterer { border:1px solid #0fb4e7; cursor:pointer;
+.pin_clusterer { border:1px solid #0fb4e7; cursor:pointer !important;
 	box-shadow:1px 1px 3px #333;
 	border-radius:50%;
 	background: #a9e4f7; /* Old browsers */

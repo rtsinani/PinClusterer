@@ -11,6 +11,9 @@
 			clickToZoom				: true,
 			onClusterToMap		: null
 		},
+
+		// Minimum zoom level before bounds dissappear
+		MIN_ZOOM = 2,
 		
 		// Alias for Microsoft.Maps
 		mm = null;
@@ -88,7 +91,7 @@
 				location 				= new mm.Location(latlong.latitude, latlong.longitude),
 				clusterToAddTo 	= null,
 				d;
-			if (!this._bounds.contains(location)) return;
+			if (this._zoom > MIN_ZOOM && !this._bounds.contains(location)) return;
 			
 			if (this._zoom >= _defaults.maxZoom) {
 				this.doClickToZoom = false;
