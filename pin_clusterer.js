@@ -248,7 +248,7 @@
 				typeName	: typeName
 			});
 			if (_defaults.onClusterToMap) {
-				_defaults.onClusterToMap.apply(this._pinClusterer, [this.center.pushpin]);
+				_defaults.onClusterToMap.apply(this._pinClusterer, [this.center.pushpin, this]);
 			}
 		}
 	};
