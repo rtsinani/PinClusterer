@@ -173,7 +173,7 @@
 	  return d;
 	};
 	
-	Cluster = function (pinClusterer) {
+	var Cluster = function (pinClusterer) {
 		this._pinClusterer 	= pinClusterer;
 		this.locations 			= [];
 		this.center					= null;
@@ -253,7 +253,7 @@
 		}
 	};
 	
-	Pin = function (location, cluster, options) {
+	var Pin = function (location, cluster, options) {
 		this.location = location;
 		this._cluster = cluster;
 		
@@ -278,7 +278,7 @@
 			}
 		},
 		
-		toMap: function (layer, title) {
+		toMap: function (layer) {
 			layer.push(this.pushpin);
 		}
 	};
