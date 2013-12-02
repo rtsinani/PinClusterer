@@ -14,7 +14,7 @@ h1.logo { margin-left:1em; font-size:24px; line-height:0; color:#0193BF; text-sh
 h1.logo i { color:#fff; }
 h1.logo span { font-size:18px; margin-left:20px; color:#f0f0f0; }
 
-#banner { position:absolute; top:0; left:0; width:100%; }
+#banner { position:absolute; top:0; right:0; font-style: italic; }
 #banner div { height: 149px; width: 149px; overflow:hidden; position:relative; z-index:999; float:right;	}
 #banner a { display: block; width: 190px; font-size: 14px;
 	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", 
@@ -48,10 +48,10 @@ h1.logo span { font-size:18px; margin-left:20px; color:#f0f0f0; }
 aside { float:left; width:650px; overflow:hidden; overflow-y:auto;
 	background:#fff; border-right:3px solid #d0d0d0; }
 aside section { padding:20px; }
-aside section p { padding:5px 0; }
+aside section p { padding:5px 0; line-height: 1.8; }
 aside section h2 { padding:15px 0 5px; }
 aside section footer { margin:50px auto; text-align1:center; color:#999; }
-aside section .subtitle { font-size:14px; text-align:center; }
+aside section .subtitle { font-size:15px; text-align:center; }
 aside section ul.references { marging:20px 0; }
 
 #map { display:block; float:left; position:relative; background:#888; color:#ddd; overflow:hidden; }
@@ -65,6 +65,25 @@ aside section ul.references { marging:20px 0; }
 .cf:after { clear:both; }
 /* For IE 6/7 (trigger hasLayout) */
 .cf { zoom:1; }
+
+.book {
+	position: relative;
+	padding-right: 15em;
+	height: 12em;
+}
+
+.book .img {
+	display: block;
+	width: 100px;
+	position: absolute;
+	top: 0;
+	right: 2em;
+}
+
+.book .img img {
+	width: 100%;
+	height: auto;
+}
 
 pre, code { border-radius:3px; font-family:Menlo,Monaco,"Courier New",monospace; font-size:12px; line-height:16px; }
 code { background-color: #F7F7F9; border: 1px solid #E1E1E8; color:#888; padding:2px 4px; }
