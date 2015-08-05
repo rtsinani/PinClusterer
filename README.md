@@ -5,4 +5,7 @@ For a live demo and docs, check out the product page at [Lugo Labs](http://lugol
 
 = = =
 
-Copyright. 2012. Arti Sinani
+Licence
+--
+
+[MIT](http://opensource.org/licenses/MIT)
